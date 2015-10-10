@@ -1,7 +1,3 @@
-
-
-import com.gargoylesoftware.htmlunit.html.DomElement;
-
 import java.time.DayOfWeek;
 import java.time.LocalTime;
 
@@ -19,17 +15,7 @@ public class Lecture {
         this.startTime = startTime;
         this.endTime = endTime;
     }
-    public static Lecture fromHtml(DomElement element){
-        DayOfWeek dayOfWeek = Utils.getDay(element.getParentNode().asText().split("\n")[0].trim());
-        DomElement infoRow = element.getElementsByTagName("table").get(0).getElementsByTagName("tr").get(0);
-        String title = infoRow.getElementsByTagName("td").get(0).getTextContent();
-        LocalTime startTime = LocalTime.parse(infoRow.getElementsByTagName("td").get(1).getTextContent());
-        LocalTime endTime = LocalTime.parse(infoRow.getElementsByTagName("td").get(2).getTextContent());
-        DomElement infoRow2 = element.getElementsByTagName("table").get(1).getElementsByTagName("tr").get(0);
-        String building = infoRow2.getElementsByTagName("td").get(1).getTextContent();
-        String room = infoRow2.getElementsByTagName("td").get(2).getTextContent();
-        return new Lecture(title, building + " - " + room, dayOfWeek, startTime, endTime);
-    }
+
 
     public String getTitle() {
         return title;
