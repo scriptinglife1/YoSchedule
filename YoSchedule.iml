@@ -9,5 +9,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jsoup-1.8.3" level="project" />
     <orderEntry type="library" name="cssparser-0.9.16" level="project" />
+    <orderEntry type="library" name="javax.servlet:javax.servlet-api:3.0.1" level="project" />
+    <orderEntry type="library" name="com.google.apis:google-api-services-calendar:v3-rev89-1.19.0" level="project" />
+    <orderEntry type="library" name="com.google.oauth-client:google-oauth-client-jetty:1.20.0" level="project" />
   </component>
 </module>
