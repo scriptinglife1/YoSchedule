@@ -13,6 +13,7 @@ import com.google.api.client.util.DateTime;
 
 import com.google.api.services.calendar.CalendarScopes;
 import com.google.api.services.calendar.model.*;
+import sun.util.resources.CalendarData;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -101,6 +102,16 @@ public class CalendarQuickstart {
         com.google.api.services.calendar.Calendar service =
             getCalendarService();
 
+        String pageToken = null;
+        do {
+            CalendarList calendarList = service.calendarList().list().execute();
+            List<CalendarListEntry> items = calendarList.getItems();
+
+            for (CalendarListEntry calendarListEntry : items) {
+                System.out.println(calendarListEntry.getSummary());
+            }
+            pageToken = calendarList.getNextPageToken();
+        } while (pageToken != null);
         // List the next 10 events from the primary calendar.
         DateTime now = new DateTime(System.currentTimeMillis());
         Events events = service.events().list("primary")
@@ -109,7 +120,6 @@ public class CalendarQuickstart {
             .setOrderBy("startTime")
             .setSingleEvents(true)
             .execute();
-       // service.calendars().insert()
         List<Event> items = events.getItems();
         if (items.size() == 0) {
             System.out.println("No upcoming events found.");
