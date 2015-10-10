@@ -33,9 +33,12 @@ public class MyEd {
         HtmlPage page3 = ((HtmlForm)(page2.getElementsByTagName("form").get(0))).getInputByValue("Continue").click();
         HtmlPage page4 = page3.getFormByName("swsform").getInputByName("bGetTimetable").click();
         System.out.println(page4.asText());
-        for(Lecture lecture:getLectures(page4)){
+        LinkedList<Lecture> lectures = getLectures(page4);
+        for(Lecture lecture:lectures){
             System.out.println(lecture);
         }
+        CalendarQuickstart cal = new CalendarQuickstart();
+        cal.addLectureUsingBatch(lectures);
     }
     private static LinkedList<Lecture> getLectures(HtmlPage timetable) throws IOException {
         LinkedList<Lecture> lectures = new LinkedList<>();
