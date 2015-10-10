@@ -44,6 +44,7 @@ public class CalendarQuickstart {
     private static final List<String> SCOPES =
         Arrays.asList(CalendarScopes.CALENDAR);
 
+    com.google.api.services.calendar.Calendar service;
     static {
         try {
             HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
@@ -94,22 +95,98 @@ public class CalendarQuickstart {
                 .build();
     }
 
-    public static void main(String[] args) throws IOException {
+    public void addLectureUsingBatch(LinkedList<Lecture> lectures, Calendar calendar) throws IOException {
+        View.header("Add Calendars using Batch");
+        BatchRequest batch = service.batch();
+
+        // Create the callback.
+        JsonBatchCallback<Event> callback = new JsonBatchCallback<Event>() {
+
+            @Override
+            public void onSuccess(Event event, HttpHeaders responseHeaders) {
+                View.display(event);
+            }
+
+            @Override
+            public void onFailure(GoogleJsonError e, HttpHeaders responseHeaders) {
+                System.out.println("Error Message: " + e.getMessage());
+            }
+        };
+        for (Lecture lecture: lectures){
+            Event lectureEvent = eventFromLecture(lecture);
+            service.events().insert(calendar.getId(),lectureEvent).queue(batch,callback);
+        }
+
+        // Create 2 Calendar Entries to insert.
+
+        batch.execute();
+    }
+
+    private Event eventFromLecture(Lecture lecture) {
+        Event event = new Event();
+        GregorianCalendar gregorianCalendar = new GregorianCalendar();
+        // The following should give us the date of the lecture this week;
+        gregorianCalendar.set(GregorianCalendar.DAY_OF_WEEK,(lecture.getDayOfWeek().getValue())%7 +1);
+        gregorianCalendar.set(GregorianCalendar.HOUR_OF_DAY, lecture.getStartTime().getHour());
+        gregorianCalendar.set(GregorianCalendar.MINUTE, lecture.getStartTime().getMinute());
+        gregorianCalendar.set(GregorianCalendar.SECOND, 0);
+        Date startDate = gregorianCalendar.getTime();
+        gregorianCalendar.set(GregorianCalendar.HOUR_OF_DAY, lecture.getEndTime().getHour());
+        gregorianCalendar.set(GregorianCalendar.MINUTE, lecture.getEndTime().getMinute());
+        // There's no need to adjust the other variables for the end time
+        Date endDate = gregorianCalendar.getTime();
+        DateTime start = new DateTime(startDate, TimeZone.getTimeZone("GMT"));
+        event.setStart(new EventDateTime().setDateTime(start).setTimeZone("GMT"));
+        DateTime end = new DateTime(endDate, TimeZone.getTimeZone("GMT"));
+        event.setEnd(new EventDateTime().setDateTime(end).setTimeZone("GMT"));
+        event.setSummary(lecture.getTitle());
+        event.setLocation(lecture.getLocation());
+        // I set the recurrence from the current date to the 1st of july, you might need to change this
+        event.setRecurrence(Arrays.asList("RRULE:FREQ=WEEKLY;UNTIL=20160701T170000Z"));
+        return event;
+    }
+
+    public CalendarQuickstart(){
         // Build a new authorized API client service.
         // Note: Do not confuse this class with the
         //   com.google.api.services.calendar.model.Calendar class.
-        com.google.api.services.calendar.Calendar service =
-            getCalendarService();
+        service =            getCalendarService();
 
         // List the next 10 events from the primary calendar.
         DateTime now = new DateTime(System.currentTimeMillis());
         Events events = service.events().list("primary")
-            .setMaxResults(10)
-            .setTimeMin(now)
-            .setOrderBy("startTime")
-            .setSingleEvents(true)
-            .execute();
-       // service.calendars().insert()
+                .setMaxResults(10)
+                .setTimeMin(now)
+                .setOrderBy("startTime")
+                .setSingleEvents(true)
+                .execute();
+
+        String pageToken = null;
+        boolean flag_for_calendar_creation = true;
+        do {
+
+            CalendarList calendarList = service.calendarList().list().setPageToken(pageToken).execute();
+            List<CalendarListEntry> items = calendarList.getItems();
+
+            for (CalendarListEntry calendarListEntry : items) {
+                if(calendarListEntry.getSummary().equals("Calendar for YoSchedule")){
+                    flag_for_calendar_creation = false;
+                    System.out.println(calendarListEntry.getSummary());
+                }
+            }
+            pageToken = calendarList.getNextPageToken();
+        } while (pageToken != null && flag_for_calendar_creation);
+
+// creating calendar if there are no calendars with same description
+        com.google.api.services.calendar.model.Calendar calendar = new Calendar();
+        calendar.setSummary("Calendar for YoSchedule");
+        if (flag_for_calendar_creation){
+            Calendar createdCalendar = service.calendars().insert(calendar).execute();
+
+        }
+
+
+
         List<Event> items = events.getItems();
         if (items.size() == 0) {
             System.out.println("No upcoming events found.");
@@ -124,5 +201,63 @@ public class CalendarQuickstart {
             }
         }
     }
+    /*public static void main(String[] args) throws IOException {
+        // Build a new authorized API client service.
+        // Note: Do not confuse this class with the
+        //   com.google.api.services.calendar.model.Calendar class.
+        com.google.api.services.calendar.Calendar service =
+            getCalendarService();
+
+        // List the next 10 events from the primary calendar.
+        DateTime now = new DateTime(System.currentTimeMillis());
+        Events events = service.events().list("primary")
+            .setMaxResults(10)
+            .setTimeMin(now)
+            .setOrderBy("startTime")
+            .setSingleEvents(true)
+            .execute();
+
+        String pageToken = null;
+        boolean flag_for_calendar_creation = true;
+        do {
+
+            CalendarList calendarList = service.calendarList().list().setPageToken(pageToken).execute();
+            List<CalendarListEntry> items = calendarList.getItems();
+
+            for (CalendarListEntry calendarListEntry : items) {
+                if(calendarListEntry.getSummary().equals("Calendar for YoSchedule")){
+                    flag_for_calendar_creation = false;
+                    System.out.println(calendarListEntry.getSummary());
+                }
+            }
+            pageToken = calendarList.getNextPageToken();
+        } while (pageToken != null && flag_for_calendar_creation);
+
+// creating calendar if there are no calendars with same description
+        com.google.api.services.calendar.model.Calendar calendar = new Calendar();
+        calendar.setSummary("Calendar for YoSchedule");
+        if (flag_for_calendar_creation){
+            Calendar createdCalendar = service.calendars().insert(calendar).execute();
+
+        }
+
+
+
+        List<Event> items = events.getItems();
+        if (items.size() == 0) {
+            System.out.println("No upcoming events found.");
+        } else {
+            System.out.println("Upcoming events");
+            for (Event event : items) {
+                DateTime start = event.getStart().getDateTime();
+                if (start == null) {
+                    start = event.getStart().getDate();
+                }
+                System.out.printf("%s (%s)\n", event.getSummary(), start);
+            }
+        }
+
+
+    }*/
 
 }
