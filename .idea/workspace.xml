@@ -2,20 +2,66 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c4ff52a-6382-4423-8905-ad1f7833720b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.7/taskArtifacts/cache.properties.lock" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.7/taskArtifacts/fileHashes.bin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.7/taskArtifacts/fileSnapshots.bin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.7/taskArtifacts/outputFileStates.bin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.7/taskArtifacts/taskArtifacts.bin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.7/taskArtifacts/cache.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/javax_servlet_javax_servlet_api_3_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" />
-      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\src\CalendarQuickstart.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\src\resources\client_secret.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\.idea\libraries\Google.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\.idea\libraries\com_google_apis_google_api_services_calendar_v3_rev35_1_14_1_beta.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\.idea\libraries\libs.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\commons-logging-1.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\google-api-client-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\google-api-client-android-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\google-api-client-appengine-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\google-api-client-gson-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\google-api-client-jackson2-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\google-api-client-java6-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\google-api-client-protobuf-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\google-api-client-servlet-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\google-api-client-xml-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\google-http-client-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\google-http-client-android-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\google-http-client-appengine-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\google-http-client-gson-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\google-http-client-jackson-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\google-http-client-jackson2-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\google-http-client-jdo-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\google-http-client-protobuf-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\google-http-client-xml-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\google-oauth-client-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\google-oauth-client-appengine-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\google-oauth-client-java6-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\google-oauth-client-jetty-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\google-oauth-client-servlet-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\gson-2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\guava-jdk5-13.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\httpclient-4.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\httpcore-4.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\jackson-core-2.1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\jackson-core-asl-1.9.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\jdo2-api-2.3-eb.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\jetty-6.1.26.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\jetty-util-6.1.26.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\jsr305-1.3.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\protobuf-java-2.4.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\transaction-api-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Workspace\YoSchedule\libs\Google\xpp3-1.1.4c.jar" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/YoSchedule.iml" afterPath="$PROJECT_DIR$/YoSchedule.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/google-api-client-1.20.0.jar.properties" afterPath="$PROJECT_DIR$/libs/google-api-client-1.20.0.jar.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/google-api-client-android-1.20.0.jar.properties" afterPath="$PROJECT_DIR$/libs/google-api-client-android-1.20.0.jar.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/google-api-client-gson-1.20.0.jar.properties" afterPath="$PROJECT_DIR$/libs/google-api-client-gson-1.20.0.jar.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/google-api-client-jackson2-1.20.0.jar.properties" afterPath="$PROJECT_DIR$/libs/google-api-client-jackson2-1.20.0.jar.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/google-api-client-protobuf-1.20.0.jar.properties" afterPath="$PROJECT_DIR$/libs/google-api-client-protobuf-1.20.0.jar.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/google-api-client-xml-1.20.0.jar.properties" afterPath="$PROJECT_DIR$/libs/google-api-client-xml-1.20.0.jar.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/google-http-client-1.20.0.jar.properties" afterPath="$PROJECT_DIR$/libs/google-http-client-1.20.0.jar.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/google-http-client-android-1.20.0.jar.properties" afterPath="$PROJECT_DIR$/libs/google-http-client-android-1.20.0.jar.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/google-http-client-gson-1.20.0.jar.properties" afterPath="$PROJECT_DIR$/libs/google-http-client-gson-1.20.0.jar.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/google-http-client-jackson-1.20.0.jar.properties" afterPath="$PROJECT_DIR$/libs/google-http-client-jackson-1.20.0.jar.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/google-http-client-jackson2-1.20.0.jar.properties" afterPath="$PROJECT_DIR$/libs/google-http-client-jackson2-1.20.0.jar.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/google-http-client-protobuf-1.20.0.jar.properties" afterPath="$PROJECT_DIR$/libs/google-http-client-protobuf-1.20.0.jar.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/google-http-client-xml-1.20.0.jar.properties" afterPath="$PROJECT_DIR$/libs/google-http-client-xml-1.20.0.jar.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/google-oauth-client-1.20.0.jar.properties" afterPath="$PROJECT_DIR$/libs/google-oauth-client-1.20.0.jar.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/gson-2.1.jar.properties" afterPath="$PROJECT_DIR$/libs/gson-2.1.jar.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/jackson-core-2.1.3.jar.properties" afterPath="$PROJECT_DIR$/libs/jackson-core-2.1.3.jar.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/jackson-core-asl-1.9.11.jar.properties" afterPath="$PROJECT_DIR$/libs/jackson-core-asl-1.9.11.jar.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/protobuf-java-2.4.1.jar.properties" afterPath="$PROJECT_DIR$/libs/protobuf-java-2.4.1.jar.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="E:\Workspace\YoSchedule\.idea\libraries\com_google_apis_google_api_services_calendar_v3_rev35_1_13_2_beta.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_google_apis_google_api_services_calendar_v3_rev35_1_14_1_beta.xml" />
     </list>
     <ignored path="LocalHackDay.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,11 +96,9 @@
       <file leaf-file-name="CalendarQuickstart.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/CalendarQuickstart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.06666667">
-              <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.06719818">
+              <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,13 +118,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#8566#0" expanded="false" />
-                <element signature="e#1398#1399#0" expanded="false" />
-                <element signature="e#1430#1431#0" expanded="false" />
-                <element signature="e#6514#6515#0" expanded="false" />
-                <element signature="e#6542#6543#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,9 +138,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -122,9 +158,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -135,15 +169,7 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1539#1540#0" expanded="false" />
-                <element signature="e#1567#1568#0" expanded="false" />
-                <element signature="e#1602#1603#0" expanded="false" />
-                <element signature="e#1633#1634#0" expanded="false" />
-                <element signature="e#1672#1673#0" expanded="false" />
-                <element signature="e#1704#1705#0" expanded="false" />
-                <element signature="e#1741#1742#0" expanded="false" />
-                <element signature="e#1771#1772#0" expanded="false" />
+                <element signature="e#1842#1843#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -210,7 +236,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -313,8 +339,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -558,32 +584,32 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3872" height="2092" extended-state="7" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946378" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3360973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946378" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11684492" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11684492" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946378" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3360973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -634,9 +660,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -652,13 +676,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#8566#0" expanded="false" />
-            <element signature="e#1398#1399#0" expanded="false" />
-            <element signature="e#1430#1431#0" expanded="false" />
-            <element signature="e#6514#6515#0" expanded="false" />
-            <element signature="e#6542#6543#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -674,9 +692,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -692,9 +708,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -703,15 +717,155 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1539#1540#0" expanded="false" />
-            <element signature="e#1567#1568#0" expanded="false" />
-            <element signature="e#1602#1603#0" expanded="false" />
-            <element signature="e#1633#1634#0" expanded="false" />
-            <element signature="e#1672#1673#0" expanded="false" />
-            <element signature="e#1704#1705#0" expanded="false" />
-            <element signature="e#1741#1742#0" expanded="false" />
-            <element signature="e#1771#1772#0" expanded="false" />
+            <element signature="e#1842#1843#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/YoSchedule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CalendarQuickstart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/io/InputStreamReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/io/Reader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyEd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CalendarGet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SendYo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lecture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="e#1842#1843#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/YoSchedule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CalendarQuickstart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/io/InputStreamReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/io/Reader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyEd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CalendarGet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SendYo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lecture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="e#1842#1843#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -728,9 +882,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -738,9 +890,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -749,15 +899,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1539#1540#0" expanded="false" />
-            <element signature="e#1567#1568#0" expanded="false" />
-            <element signature="e#1602#1603#0" expanded="false" />
-            <element signature="e#1633#1634#0" expanded="false" />
-            <element signature="e#1672#1673#0" expanded="false" />
-            <element signature="e#1704#1705#0" expanded="false" />
-            <element signature="e#1741#1742#0" expanded="false" />
-            <element signature="e#1771#1772#0" expanded="false" />
+            <element signature="e#1842#1843#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -774,9 +916,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -785,15 +925,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1539#1540#0" expanded="false" />
-            <element signature="e#1567#1568#0" expanded="false" />
-            <element signature="e#1602#1603#0" expanded="false" />
-            <element signature="e#1633#1634#0" expanded="false" />
-            <element signature="e#1672#1673#0" expanded="false" />
-            <element signature="e#1704#1705#0" expanded="false" />
-            <element signature="e#1741#1742#0" expanded="false" />
-            <element signature="e#1771#1772#0" expanded="false" />
+            <element signature="e#1842#1843#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -802,9 +934,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -835,13 +965,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#8566#0" expanded="false" />
-            <element signature="e#1398#1399#0" expanded="false" />
-            <element signature="e#1430#1431#0" expanded="false" />
-            <element signature="e#6514#6515#0" expanded="false" />
-            <element signature="e#6542#6543#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -849,7 +973,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33275715">
           <caret line="380" column="0" selection-start-line="380" selection-start-column="0" selection-end-line="380" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -863,11 +986,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/CalendarQuickstart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06666667">
-          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.06719818">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -936,7 +1057,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>javax.servlet:javax.servlet-api:3.0.1</last-edited>
+          <last-edited>com.google.oauth-client:google-oauth-client-jetty:1.20.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
