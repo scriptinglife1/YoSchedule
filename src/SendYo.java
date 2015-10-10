@@ -5,7 +5,9 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.HttpURLConnection;
 
-public class SendYo{
+public class SendYo {
+
+
 
     ///Sends Yo to the user with the name "username"
     public void sendYo (String username){
