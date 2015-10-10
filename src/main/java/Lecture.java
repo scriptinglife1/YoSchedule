@@ -1,3 +1,5 @@
+package main.java;
+
 import com.gargoylesoftware.htmlunit.html.DomElement;
 
 import java.time.DayOfWeek;

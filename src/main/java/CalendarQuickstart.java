@@ -1,4 +1,5 @@
 package main.java;
+
 import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp;
 import com.google.api.client.extensions.jetty.auth.oauth2.LocalServerReceiver;
@@ -20,29 +21,44 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.Date;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 
 public class CalendarQuickstart {
-    /** Application name. */
+    /**
+     * Application name.
+     */
     private static final String APPLICATION_NAME =
-        "Google Calendar API Java Quickstart";
+            "Google Calendar API Java Quickstart";
 
-    /** Directory to store user credentials for this application. */
+    /**
+     * Directory to store user credentials for this application.
+     */
     private static final java.io.File DATA_STORE_DIR = new java.io.File(
-        System.getProperty("user.home"), ".credentials/calendar-java-quickstart");
+            System.getProperty("user.home"), ".credentials/calendar-java-quickstart");
 
-    /** Global instance of the {@link FileDataStoreFactory}. */
+    /**
+     * Global instance of the {@link FileDataStoreFactory}.
+     */
     private static FileDataStoreFactory DATA_STORE_FACTORY;
 
-    /** Global instance of the JSON factory. */
+    /**
+     * Global instance of the JSON factory.
+     */
     private static final JsonFactory JSON_FACTORY =
-        JacksonFactory.getDefaultInstance();
+            JacksonFactory.getDefaultInstance();
 
-    /** Global instance of the HTTP transport. */
+    /**
+     * Global instance of the HTTP transport.
+     */
     private static HttpTransport HTTP_TRANSPORT;
 
-    /** Global instance of the scopes required by this quickstart. */
+    /**
+     * Global instance of the scopes required by this quickstart.
+     */
     private static final List<String> SCOPES =
-        Arrays.asList(CalendarScopes.CALENDAR);
+            Arrays.asList(CalendarScopes.CALENDAR);
 
     com.google.api.services.calendar.Calendar service;
     static {
@@ -57,6 +73,7 @@ public class CalendarQuickstart {
 
     /**
      * Creates an authorized Credential object.
+     *
      * @return an authorized Credential object.
      * @throws IOException
      */
@@ -83,11 +100,12 @@ public class CalendarQuickstart {
 
     /**
      * Build and return an authorized Calendar client service.
+     *
      * @return an authorized Calendar client service
      * @throws IOException
      */
     public static com.google.api.services.calendar.Calendar
-        getCalendarService() throws IOException {
+    getCalendarService() throws IOException {
         Credential credential = authorize();
         return new com.google.api.services.calendar.Calendar.Builder(
                 HTTP_TRANSPORT, JSON_FACTORY, credential)
@@ -206,7 +224,7 @@ public class CalendarQuickstart {
         // Note: Do not confuse this class with the
         //   com.google.api.services.calendar.model.Calendar class.
         com.google.api.services.calendar.Calendar service =
-            getCalendarService();
+                getCalendarService();
 
         // List the next 10 events from the primary calendar.
         DateTime now = new DateTime(System.currentTimeMillis());
@@ -243,6 +261,7 @@ public class CalendarQuickstart {
 
 
 
+
         List<Event> items = events.getItems();
         if (items.size() == 0) {
             System.out.println("No upcoming events found.");
@@ -253,11 +272,42 @@ public class CalendarQuickstart {
                 if (start == null) {
                     start = event.getStart().getDate();
                 }
-                System.out.printf("%s (%s)\n", event.getSummary(), start);
+                System.out.println(start); //Prints start date of the event
+                checkDateTime(start.toString()); //Checks event with present time
+            }
+        }
+    }
+
+    public static void checkDateTime(String eventTime) {
+        String currentDate = createDate();
+        String currentTime = createTime();
+        if (eventTime.contains(currentDate)) {
+            int number1 = ((Character.getNumericValue(eventTime.charAt(11)) * 10 + Character.getNumericValue(eventTime.charAt(12))) * 60) +
+                    ((Character.getNumericValue(eventTime.charAt(14)) * 10 + Character.getNumericValue(eventTime.charAt(15))));
+            int number2 = ((Character.getNumericValue(currentTime.charAt(0)) * 10 + Character.getNumericValue(currentTime.charAt(1))) * 60) +
+                    (Character.getNumericValue(currentTime.charAt(3)) * 10 + Character.getNumericValue(currentTime.charAt(4)));
+            if (number1 - number2 <= 10 && number1 - number2 > 0) {
+                System.out.println("Success");
+                SendYo yothem = new SendYo();
+                yothem.sendYo("FILIPEW");
             }
         }
 
 
     }*/
+
+    public static  String createDate(){
+        DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+        Date dateobj = new Date();
+        String dateTime = df.format(dateobj);
+        return dateTime;
+    }
+
+    public static String createTime(){
+        DateFormat df = new SimpleDateFormat("HH:mm:ss");
+        Date dateobj = new Date();
+        String timeTime = df.format(dateobj);
+        return timeTime;
+    }
 
 }
