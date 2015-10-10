@@ -14,7 +14,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-public class HttpUrlConnectionExample {
+public class MyEd {
 
     private List<String> cookies;
     private HttpsURLConnection conn;
@@ -23,24 +23,24 @@ public class HttpUrlConnectionExample {
 
     public static void main(String[] args) throws Exception {
 
-        String url = "https://accounts.google.com/ServiceLoginAuth";
-        String gmail = "https://mail.google.com/mail/";
+        String url = "https://www.ease.ed.ac.uk/cosign.cgi?cosign-eucsCosign-www.myed.ed.ac.uk&https://www.myed.ed.ac.uk/uPortal/";
+        String timetable = "https://www.myed.ed.ac.uk/uPortal/f/student-home/normal/render.uP";
 
-        HttpUrlConnectionExample http = new HttpUrlConnectionExample();
+        MyEd http = new MyEd();
 
         // make sure cookies is turn on
         CookieHandler.setDefault(new CookieManager());
 
         // 1. Send a "GET" request, so that you can extract the form's data.
         String page = http.GetPageContent(url);
-        String postParams = http.getFormParams(page, "username@gmail.com", "password");
+        String postParams = http.getFormParams(page, "s1457539", "");
 
         // 2. Construct above post's content and then send a POST request for
         // authentication
         http.sendPost(url, postParams);
 
         // 3. success then go to gmail.
-        String result = http.GetPageContent(gmail);
+        String result = http.GetPageContent(timetable);
         System.out.println(result);
     }
 
@@ -88,7 +88,7 @@ public class HttpUrlConnectionExample {
             response.append(inputLine);
         }
         in.close();
-        // System.out.println(response.toString());
+        System.out.println(response.toString());
 
     }
 
@@ -141,18 +141,22 @@ public class HttpUrlConnectionExample {
         Document doc = Jsoup.parse(html);
 
         // Google form id
-        Element loginform = doc.getElementById("gaia_loginform");
-        Elements inputElements = loginform.getElementsByTag("input");
+        Element loginform = doc.getElementsByAttributeValue("action","/cosign.cgi").first();
+        Elements inputElements = loginform.getAllElements();
         List<String> paramList = new ArrayList<String>();
         for (Element inputElement : inputElements) {
             String key = inputElement.attr("name");
             String value = inputElement.attr("value");
 
-            if (key.equals("Email"))
+            if (key.equals("login")) {
                 value = username;
-            else if (key.equals("Passwd"))
+                System.out.println("Found username element");
+            }
+            else if (key.equals("password"))
                 value = password;
-            paramList.add(key + "=" + URLEncoder.encode(value, "UTF-8"));
+            if (!key.equals("")) {
+                paramList.add(key + "=" + URLEncoder.encode(value, "UTF-8"));
+            }
         }
 
         // build parameters list
