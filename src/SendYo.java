@@ -7,8 +7,8 @@ import java.net.HttpURLConnection;
 
 public class SendYo{
 
-    /*//Sends Yo to the user with the name "username"
-    public void sendYo throws IOException(String username){
+    //Sends Yo to the user with the name "username"
+   /* public void sendYo throws IOException(String username){
         URL obj = new URL("http://api.justyo.co/yo/");
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
         con.setRequestMethod("POST");
